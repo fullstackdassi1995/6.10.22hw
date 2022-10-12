@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ //   קלוט שלמים עד שייקלט ערך שלילי
+ // עבור כל שלם חיובי הצג את סכום ספרותיו   
+while (true){
+    mone = 0
+    x = parseInt(prompt(`enter shalem`)) 
+        if (x < 0)
+        {break;}
+        document.write(`the num is: ${x} <br/>`)
+            while (x > 0)
+                    {
+            x = Math.floor(x/10)
+             mone++
+        }
+
+        document.write(`mispar digit is ${mone} <br/>`)
+    }
+        
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

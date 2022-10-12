@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>targil 12</title>
+</head>
+<body>
+    <script>
+//קלוט שלם והצג את סכום הספרות שלו
+
+x = parseInt(prompt(`entar shalem`))
+document.write(`the number is: ${x} </br>`)
+mone = 1
+sum = x % 10
+
+while(x >= 10 )
+{   
+    x = Math.floor(x/10)
+    sum = sum + (x%10)
+    mone++
+}
+
+document.write(`sum digit ${sum}`)
+
+    </script>
+    
+</body>
+</html>

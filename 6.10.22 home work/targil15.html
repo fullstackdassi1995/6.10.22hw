@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <title>targil 15</title>
+</head>
+<body><script>
+//קלוט שלם, והצג "פולינדרום" או "לא פולינדרום"י
+shalem = parseInt(prompt(`enter shalem`))
+hafuch = 0
+document.write(`the shalem is: ${shalem} <br/>`)
+shalem1 = shalem
+
+while (shalem > 0){
+    hafuch = hafuch + (shalem % 10)
+    hafuch = hafuch * 10
+    shalem = Math.floor( shalem / 10)
+}
+hafuch = Math.floor(hafuch / 10)
+    
+    if (hafuch == shalem1){
+        document.write(`polindroom`)
+    }
+    else {
+        document.write(`not polindroom`)
+    }
+</script>
+    
+</body>
+</html>

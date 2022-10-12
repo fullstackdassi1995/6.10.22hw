@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>targil 14</title>
+</head>
+<body>
+    <script>
+// קלוט שלם והצג את ספרותיו בסדר הפוך
+shalem = parseInt(prompt(`enter shalem`))
+hafuch = 0
+document.write(`the shalem is: ${shalem} <br/>`)
+
+while (shalem > 0){
+    hafuch = hafuch + (shalem % 10)
+    hafuch = hafuch * 10
+    shalem = Math.floor( shalem / 10)
+}
+hafuch = Math.floor(hafuch / 10)
+document.write (`the num hafuch: ${hafuch}`)
+    </script>
+    
+</body>
+</html>

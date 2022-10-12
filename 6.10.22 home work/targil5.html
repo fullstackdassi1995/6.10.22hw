@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>targil 5</title>
+</head>
+<body><script>
+//קלוט מספרים אי שליליים עד הזקיף 99- והצג את סכומם
+mone = 0
+while(true){
+x = parseInt(prompt(`enter number`))
+    if (x < 0){
+        break;
+    }
+    if (x >= 100 ){
+        break
+    }
+    mone = mone + x
+    document.write(`the num is ${x} <br/>`)
+}
+document.write(`<h3> the sum is ${mone} <h3/>`)
+</script>
+    
+</body>
+</html>

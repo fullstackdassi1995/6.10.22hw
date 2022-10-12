@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// קלוט שלם איקס וחד ספרתי דיג
+// הצג כמה פעמים הסיפרה דיג מופיעה באיקס
+x = parseInt(prompt(`enter shalem`))
+dig = parseInt(prompt(`enter 1 digit`))
+
+document.write(`the shalem is: ${x} </br>`)
+document.write(`the 1 dig is : ${dig} <br/>`)
+mone = 0
+if (x == 0 && dig == 0){
+    mone = 1
+}
+while ( x > 0){
+    
+        if (x % 10 == dig)
+        {mone++}
+        x = Math.floor(x / 10)    }
+document.write(`dig in shalem: ${mone}`)
+    </script>
+    
+</body>
+</html>
